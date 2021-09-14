@@ -1,4 +1,4 @@
-package com.tochukwu.project.ui.theme
+package com.tochukwu.project.presentation.ui.theme
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font

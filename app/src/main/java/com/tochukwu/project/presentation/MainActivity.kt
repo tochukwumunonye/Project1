@@ -1,32 +1,28 @@
-package com.tochukwu.project
+package com.tochukwu.project.presentation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.res.stringResource
-import androidx.navigation.NavDestination.Companion.hierarchy
-import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
-import com.tochukwu.project.ui.theme.ProjectTheme
+import com.tochukwu.project.presentation.ui.theme.ProjectTheme
+import com.tochukwu.project.presentation.util.Navigation
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent{
             ProjectTheme {
-                androidx.compose.material.Surface(color = MaterialTheme.colors.background) {
-                    androidx.compose.material.Surface(
-                        color = MaterialTheme.colors.background, modifier.fillMasxSize()+
-                    ) {
-
-                    }
+                Surface(
+                    color =    MaterialTheme.colors.background,
+                    modifier = Modifier.fillMaxSize()
+                ) {
+                    Navigation()
                 }
+
             }
         }
     }
@@ -37,12 +33,6 @@ class MainActivity : ComponentActivity() {
 /**
  *
 
-import com.plcoding.socialnetworktwitch.R
-import com.plcoding.socialnetworktwitch.presentation.components.StandardScaffold
-import com.plcoding.socialnetworktwitch.presentation.ui.theme.SocialNetworkTwitchTheme
-import com.plcoding.socialnetworktwitch.presentation.util.Navigation
-import com.plcoding.socialnetworktwitch.presentation.util.Screen
-import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 
