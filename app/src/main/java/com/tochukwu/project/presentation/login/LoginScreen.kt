@@ -38,11 +38,11 @@ fun LoginScreen(
                     start = SpaceLarge,
                     end = SpaceLarge,
                     top = SpaceLarge,
-                    bottom = 50.dp /////
+                    bottom = 50.dp //
                 )
         ) {
             Column(
-                verticalArrangement = Arrangement.Center,
+                verticalArrangement = Arrangement.Center, ///
                 modifier = Modifier
                     .fillMaxSize()
                     .align(Alignment.Center),

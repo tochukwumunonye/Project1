@@ -23,7 +23,7 @@ import com.tochukwu.project.util.Constant.SPLASH_SCREEN_DURATION
 @Composable
 fun SplashScreen(
    navController: NavController,
-   dispatcher: CoroutineDispatcher = Dispatchers.Main
+   dispatcher: CoroutineDispatcher = Dispatchers.Main  //
 ){
     val scale = remember{
         Animatable(0f)
